@@ -117,13 +117,13 @@ int main(int argc, char *argv[])
             // How to use
             ImGui::Text("Instructions");
             ImGui::BulletText("[click]  place constrained points");
-            ImGui::BulletText("[space]  change mode");
-            ImGui::BulletText("R          reset ");
+            ImGui::BulletText("[space]  start/stop optimization");
+            ImGui::BulletText("R        reset");
             ImGui::BulletText("</>      decrease/increase lambda");
-            ImGui::BulletText("Q/W    rotate x-axis");
+            ImGui::BulletText("Q/W      rotate x-axis");
             ImGui::BulletText("A/S      rotate y-axis");
             ImGui::BulletText("Z/X      rotate z-axis");
-            ImGui::BulletText("L          show edges");
+            ImGui::BulletText("L        show edges");
             ImGui::Text(" ");
         }
         {
