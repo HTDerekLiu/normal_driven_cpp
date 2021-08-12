@@ -13,3 +13,4 @@ once it is compiled, you can run `./normalDriven_bin [input.obj] [style.obj]` su
 ```
 ./normalDriven_bin bunny.obj cube.obj
 ```
+to play with the stylization in the UI.
