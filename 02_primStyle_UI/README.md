@@ -11,6 +11,6 @@ make -j8
 ```
 once it is compiled, you can run `./normalDriven_bin [input.obj] [style.obj]` such as 
 ```
-./normalDriven_bin bunny.obj cube.obj
+./normalDriven_bin spot.obj cube.obj
 ```
 to play with the stylization in the UI.

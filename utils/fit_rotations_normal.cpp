@@ -44,7 +44,7 @@ void fit_rotations_normal(
 
             // SVD
             MatrixXd S = Spre + data.lambda * data.A(kk) * n * n_target.transpose();
-            igl::fit_rotations_SSE(S, R);
+            igl::fit_rotations(S, true, R);
             
             // save parameters
             RAll.block(3*kk,0,3,3) = R;

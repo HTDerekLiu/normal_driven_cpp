@@ -44,7 +44,7 @@ void fit_rotations_normal_scale(
 
             // SVD
             MatrixXd S = Spre + data.lambda * data.A(kk) * n * n_target.transpose();
-            igl::fit_rotations_SSE(S, R);
+            igl::fit_rotations(S, true, R);
 
             // find the best scale 
             double s = ((Wvec.asDiagonal()*dU.transpose()*(R*dV)).trace() + data.lambda*data.A(kk)*n_target.transpose()*n) / ((Wvec.asDiagonal()*dV.transpose()*dV).trace() + data.lambda*data.A(kk)*n.transpose()*n);

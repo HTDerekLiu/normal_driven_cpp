@@ -10,11 +10,6 @@
 #include <iostream>
 #include <fstream>
 
-#ifndef MESH_PATH
-#define MESH_PATH "../../meshes/"
-#endif
-
-// to run the code, type ./normalDriven_bin spot.obj cone.obj 2e-4
 int main(int argc, char *argv[])
 {
 	using namespace Eigen;
@@ -29,8 +24,8 @@ int main(int argc, char *argv[])
         meshName = argv[1];
         styleMeshName = argv[2];
         stopReldV = stod(argv[3]);
-        string meshPath = MESH_PATH + meshName;
-		string styleMeshPath = MESH_PATH + styleMeshName;
+        string meshPath = meshName;
+		string styleMeshPath = styleMeshName;
 
         // get desired normals (surface normals of the input style shape)
         MatrixXd sV,sN;

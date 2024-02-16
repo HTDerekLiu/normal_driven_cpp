@@ -11,6 +11,6 @@ make -j8
 ```
 once it is compiled, you can run `./normalDriven_bin [input.obj] [style.obj] [stopping criteria]` such as 
 ```
-./normalDriven_bin spot.obj cone.obj 2e-4
+./normalDriven_bin ../../meshes/spot.obj ../../meshes/cube.obj 2e-4
 ```
 and then you will obtain a stylized `output.obj`.
